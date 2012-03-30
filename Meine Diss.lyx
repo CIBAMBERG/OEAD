@@ -23,7 +23,7 @@
 
 % Die Seiten des Inhaltsverzeichnisses werden römisch numeriert,
 % ein PDF-Lesezeichen für das Inhaltsverzeichnis wird hinzugefügt
-\pagenumbering{roman}
+\pagenumbering{arabic}
 \let\myTOC\tableofcontents
 \renewcommand\tableofcontents{%
   \pdfbookmark[1]{\contentsname}{}
@@ -159,6 +159,7 @@ target "http://bit.ly/l1LGK5"
 \end_layout
 
 \begin_layout Standard
+\align block
 Dies geschah zuerst spielerisch dann aber immer bewußter und wurde mir nach
  kurzer Zeit zu einem echten Anliegen, dies aus vielerlei Gründen, erstens
  um noch einmal zu sehen wie der damalige Prozess ablief und um sich zu
@@ -181,7 +182,7 @@ Ein weitere Grund ist eine späte Auseinandersetzung mit den Strukturen unserer
 \end_layout
 
 \begin_layout Standard
-Wo immer es ging habe ich den alten Text beibehalten, ihn wie einen burmesischen
+Wo immer es ging habe ich den alten Text beibehalten, ihn wie einen burmesischEn
  Tempel weiterentwickelt und mit Blattgold verstärkt.
  Ich hoffe die mir verbliebenen Exemplare der damals unter schwersten Einschränk
 ungen gedruckten Auflage in Zukunft bei Sothebeys zu horrenden Preisen versteige

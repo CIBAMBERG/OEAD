@@ -2,10 +2,39 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass book
+\textclass scrbook
+\begin_preamble
+% DO NOT ALTER THIS PREAMBLE!!!
+%
+%This preamble is designed to ensure that the document prints
+% out as advertised. If you mess with this preamble,
+% parts of the document may not print out as expected.  If you
+% have problems LaTeXing this file, please contact 
+% the documentation team
+% email: lyx-docs@lists.lyx.org
+
+\usepackage{ifpdf} % part of the hyperref bundle
+\ifpdf % if pdflatex is used
+
+ % set fonts for nicer pdf view
+ \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+
+ \fi % end if pdflatex is used
+
+% Die Seiten des Inhaltsverzeichnisses werden römisch numeriert,
+% ein PDF-Lesezeichen für das Inhaltsverzeichnis wird hinzugefügt
+\pagenumbering{roman}
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \cleardoublepage
+  \pagenumbering{arabic} }
+\end_preamble
 \use_default_options true
 \begin_modules
 customHeadersFooters
+minimalistic
 \end_modules
 \maintain_unincluded_children false
 \language ngerman
@@ -25,11 +54,13 @@ customHeadersFooters
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command bibtex
 \index_command default
 \paperfontsize 12
 \spacing single
 \use_hyperref true
+\pdf_title "An den Akademien der Teppichhändler"
+\pdf_author "Thomas Hoffbauer"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -39,6 +70,7 @@ customHeadersFooters
 \pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle true
+\pdf_pagemode FullScreen
 \papersize a4paper
 \use_geometry false
 \use_amsmath 1
@@ -47,12 +79,16 @@ customHeadersFooters
 \use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
-\use_indices false
+\use_indices true
 \paperorientation portrait
 \suppress_date true
 \use_refstyle 1
 \index Index
 \shortcut idx
+\color #008000
+\end_index
+\index Index2
+\shortcut ind
 \color #008000
 \end_index
 \secnumdepth 2
@@ -123,6 +159,7 @@ target "http://bit.ly/l1LGK5"
 \end_layout
 
 \begin_layout Standard
+\align block
 Dies geschah zuerst spielerisch dann aber immer bewußter und wurde mir nach
  kurzer Zeit zu einem echten Anliegen, dies aus vielerlei Gründen, erstens
  um noch einmal zu sehen wie der damalige Prozess ablief und um sich zu
@@ -145,7 +182,7 @@ Ein weitere Grund ist eine späte Auseinandersetzung mit den Strukturen unserer
 \end_layout
 
 \begin_layout Standard
-Wo immer es ging habe ich den alten Text beibehalten, ihn wie einen burmesischen
+Wo immer es ging habe ich den alten Text beibehalten, ihn wie einen burmesischEn
  Tempel weiterentwickelt und mit Blattgold verstärkt.
  Ich hoffe die mir verbliebenen Exemplare der damals unter schwersten Einschränk
 ungen gedruckten Auflage in Zukunft bei Sothebeys zu horrenden Preisen versteige
