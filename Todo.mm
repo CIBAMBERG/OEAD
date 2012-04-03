@@ -13,7 +13,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1311591167560" HGAP="-94" ID="ID_393033723" MODIFIED="1333375677662" POSITION="right" VSHIFT="-44">
+<node CREATED="1311591167560" HGAP="-94" ID="ID_393033723" MODIFIED="1333439432822" POSITION="right" VSHIFT="-44">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -23,7 +23,7 @@
       Tagesplan
     </p>
     <p>
-      Lizenzvertrag
+      Lahofer / Lizenzvertrag
     </p>
     <p>
       Hermstedt Antwort
@@ -39,6 +39,9 @@
     </p>
     <p>
       Modularisierung GIT / OEAD
+    </p>
+    <p>
+      Zieldefinition Messingschlager
     </p>
     <p>
       
