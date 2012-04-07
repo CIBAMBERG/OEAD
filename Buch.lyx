@@ -15,7 +15,6 @@
 % wenn pdflatex benutzt wird:
 \usepackage{ifpdf}
 \ifpdf
-
 % Fonts fuer huebschere PDF-Ansichten
 \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
 
