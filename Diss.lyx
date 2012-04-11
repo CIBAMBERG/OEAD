@@ -65,10 +65,10 @@ minimalistic
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
 \pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
+\pdf_breaklinks true
 \pdf_pdfborder false
 \pdf_colorlinks false
-\pdf_backref false
+\pdf_backref section
 \pdf_pdfusetitle true
 \pdf_pagemode FullScreen
 \papersize a4paper
@@ -98,7 +98,7 @@ minimalistic
 \quotes_language english
 \papercolumns 1
 \papersides 2
-\paperpagestyle default
+\paperpagestyle headings
 \tracking_changes false
 \output_changes false
 \html_math_output 0
